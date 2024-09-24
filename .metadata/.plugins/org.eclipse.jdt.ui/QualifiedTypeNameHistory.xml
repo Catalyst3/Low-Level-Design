@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.library.books.Book"/>
+    <fullyQualifiedTypeName name="com.library.books.types.frictionalBooks"/>
+    <fullyQualifiedTypeName name="com.library.books.types.NonFrictionalBooks"/>
+    <fullyQualifiedTypeName name="com.library.management.saveBooks"/>
+    <fullyQualifiedTypeName name="com.library.books.types.FrictionalBooks"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,41 @@
+package SingleResponsibilityPrinciple;
+
+import java.util.Scanner;
+
+public class RotateArray {
+	public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the size of the array N
+        int N = scanner.nextInt();
+
+        // Read the array elements
+        int[] arr = new int[N];
+        for (int i = 0; i < N; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Read the number K
+        int K = scanner.nextInt();
+        
+        // Close the scanner
+        scanner.close();
+
+        // Handle the rotation by taking the last K elements and moving them to the front
+        K = K % N;  // In case K > N, we take K mod N
+        if (K > 0) {
+            // Print the last K elements
+            for (int i = N - K; i < N; i++) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+
+        // Print the first N-K elements
+        for (int i = 0; i < N - K; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+}
+

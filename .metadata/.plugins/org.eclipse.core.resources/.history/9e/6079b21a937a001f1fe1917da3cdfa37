@@ -1,0 +1,8 @@
+package com.library.management;
+
+import java.util.List;
+
+public interface saveBooks {
+	public boolean bookSave(String bookTitle);
+	public List<String> getAllBooksDetails();
+}

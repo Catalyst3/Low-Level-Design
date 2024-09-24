@@ -1,0 +1,21 @@
+interface RestaurantEmployee{
+	void washDishes();
+	void serveCustomers();
+	void cookFood();
+}
+
+class Waiter impliment RestaurantEmployee
+{
+	void washDishes()
+	{
+		
+	}
+	void serveCustomers()
+	{
+		
+	}
+	void cookFood()
+	{
+		
+	}
+}

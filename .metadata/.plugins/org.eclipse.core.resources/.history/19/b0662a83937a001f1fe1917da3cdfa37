@@ -1,0 +1,21 @@
+package com.library.management;
+
+import com.library.books.types.FrictionalBooks;
+import com.library.books.types.NonFrictionalBooks;
+
+public class LibraryManagementSystem {
+	
+	public static void main(String args[])
+	{
+		FrictionalBooks frictionalBooks = new FrictionalBooks("Sandra Brown");
+		FrictionalBooks frictionalBooks1 = new FrictionalBooks("Don Quixote");
+		NonFrictionalBooks nonFrictionalBooks = new NonFrictionalBooks("In Cold Blood");
+		frictionalBooks.getBookTitle();
+		frictionalBooks.borrow();
+		frictionalBooks.returned();
+		
+		
+		
+	}
+	
+}

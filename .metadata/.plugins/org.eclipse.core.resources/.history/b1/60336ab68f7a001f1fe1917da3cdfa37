@@ -1,0 +1,11 @@
+package com.library.management;
+
+import com.library.books.types.FrictionalBooks;
+import com.library.books.types.NonFrictionalBooks;
+
+public class Main {
+	
+	FrictionalBooks frictionalBooks = new FrictionalBooks("Sandra Brown");
+	NonFrictionalBooks nonFrictionalBooks = new NonFrictionalBooks("In Cold Blood");
+	
+}

@@ -1,0 +1,36 @@
+package SingleResponsibilityPrinciple;
+
+import java.util.Scanner;
+
+public class RotateArray {
+	 public static void main(String[] args) {
+	        // Create a Scanner object for reading input
+	        Scanner scanner = new Scanner(System.in);
+
+	        // Read the size of the array N
+	        int N = scanner.nextInt();
+
+	        // Read the array elements
+	        int[] arr = new int[N];
+	        for (int i = 0; i < N; i++) {
+	            arr[i] = scanner.nextInt();
+	        }
+
+	        // Read the number K
+	        int K = scanner.nextInt();
+	        
+	        // Close the scanner after reading inputs
+	        scanner.close();
+
+	        // Normalize K in case K > N (although in the problem it's given 0 <= K <= N)
+	        K = K % N;
+
+	        // Print the array after rotating
+	        for (int i = 0; i < N; i++) {
+	            // Calculate the new index using modulus to wrap around
+	            System.out.print(arr[(i + N - K) % N] + " ");
+	        }
+	    }
+
+}
+

@@ -1,0 +1,34 @@
+package com.library.books.types;
+
+import com.library.books.Book;
+
+public class nonFrictionalBooks implements Book {
+	private String bookTitle;
+	private boolean bookStatus;
+	
+	
+
+	public nonFrictionalBooks(String bookTitle, boolean bookStatus) {
+		this.bookTitle = bookTitle;
+		this.bookStatus = bookStatus;
+	}
+
+	@Override
+	public void borrow(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void returned() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isBoorowed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

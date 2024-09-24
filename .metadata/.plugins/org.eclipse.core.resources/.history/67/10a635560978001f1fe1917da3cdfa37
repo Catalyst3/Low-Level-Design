@@ -1,0 +1,30 @@
+package SingleResponsibilityPrinciple;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Book {
+	private String bookName;
+	private String bookAuther;
+	
+	//Constructor
+	public Book(String bookName, String bookAuther) {
+		this.bookName = bookName;
+		this.bookAuther = bookAuther;
+	}
+	
+	//To display information of a book
+	public void displayInfo()
+	{
+		System.out.println("Title: "+ bookAuther +"\n"+ "Auther: "+bookAuther);
+	}
+	
+	 public void saveToFile(String filename) {
+	        try (FileWriter writer = new FileWriter(filename)) {
+	            writer.write("Title: " + bookName + ", Author: " + bookAuther
+	            		+ "\n");
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+}

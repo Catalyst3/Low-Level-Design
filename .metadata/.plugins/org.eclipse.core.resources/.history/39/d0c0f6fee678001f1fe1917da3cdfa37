@@ -1,0 +1,24 @@
+package OCP;
+
+public class Shape {
+    public String type;
+    
+    public Shape(String type) {
+        this.type = type;
+    }
+}
+
+public class AreaCalculator {
+    public double calculateArea(Shape shape) {
+        switch (shape.type) {
+            case "Circle":
+                return Math.PI * 2 * 2; // Example radius
+            case "Rectangle":
+                return 4 * 5; // Example width and height
+            default:
+                throw new IllegalArgumentException("Unknown shape type");
+        }
+    }
+}
+
+

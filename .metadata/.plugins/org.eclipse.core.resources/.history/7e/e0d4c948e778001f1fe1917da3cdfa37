@@ -1,0 +1,35 @@
+package SingleResponsibilityPrinciple;
+
+public class Book {
+	public static int funn(int a, int b, int c) {
+        // Step 1: a = (b + 2) + c
+        a = (b + 2) + c;
+
+        // Step 2: for each c from 3 to 4
+        for (int i = 3; i <= 4; i++) {
+            // Step 3: a = b & a
+            a = b & a;
+
+            // Step 4: if ((a ^ i) < i && (i & a) < b)
+            if ((a ^ i) < i && (i & a) < b) {
+                // Step 5: a = (a + b) + a
+                a = (a + b) + a;
+
+                // Step 6: a = b ^ a
+                a = b ^ a;
+
+                // Continue (no action needed as "continue" will be automatic in the loop)
+            }
+        }
+        System.out.println();
+        // Step 7: return a + b
+        return a+b;
+    }
+
+	public static void main(String[] args) {
+		// Test the function
+		int result = funn(3, 7, 5);
+		System.out.println("Result: " + result);
+	}
+
+}
